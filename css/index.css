@@ -63,7 +63,8 @@
     margin: 0;
     border: none;
     background: none;
-    color: #969FA8; }
+    color: #969FA8;
+    cursor: pointer; }
     .content__btn_actions {
       color: #007CFF; }
     .content__btn_next {
