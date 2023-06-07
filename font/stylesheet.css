@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'MTS Sans';
+    src: url('MTSSans-Medium.eot');
+    src: local('MTS Sans Medium'), local('MTSSans-Medium'),
+        url('MTSSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('MTSSans-Medium.woff2') format('woff2'),
+        url('MTSSans-Medium.woff') format('woff'),
+        url('MTSSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MTS Sans';
+    src: url('MTSSans-Bold.eot');
+    src: local('MTS Sans Bold'), local('MTSSans-Bold'),
+        url('MTSSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MTSSans-Bold.woff2') format('woff2'),
+        url('MTSSans-Bold.woff') format('woff'),
+        url('MTSSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MTS Sans';
+    src: url('MTSSans-Regular.eot');
+    src: local('MTS Sans Regular'), local('MTSSans-Regular'),
+        url('MTSSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MTSSans-Regular.woff2') format('woff2'),
+        url('MTSSans-Regular.woff') format('woff'),
+        url('MTSSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

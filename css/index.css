@@ -1,0 +1,165 @@
+@import url(../font/stylesheet.css);
+@import url(../font/MTSCompact-Regular/style.css);
+* {
+  padding: 0;
+  margin: 0 auto; }
+
+.logo {
+  width: 177px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 77px;
+  margin-top: 145px;
+  gap: 8.5px;
+  position: relative; }
+  .logo__text {
+    font-family: 'MTS Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.28962px;
+    line-height: 22px;
+    letter-spacing: 2.73361px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.47);
+    backdrop-filter: blur(4.93151px);
+    margin: 0; }
+  .logo__symbol {
+    width: 53.64px;
+    height: 45.56px; }
+  .logo__icon {
+    filter: drop-shadow(0px 3.94521px 29.589px rgba(249, 52, 241, 0.33)); }
+  .logo__circle {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: rgba(249, 52, 241, 0.5);
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    top: -4px;
+    left: 60px; }
+
+.content {
+  max-width: 1280px;
+  width: 86%;
+  position: relative; }
+  .content__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(188, 195, 208, 0.5); }
+  .content__recomended-text {
+    color: #626C77;
+    font-family: 'MTS Compact';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 12px; }
+  .content__btn {
+    margin: 0;
+    border: none;
+    background: none;
+    color: #969FA8; }
+    .content__btn_actions {
+      color: #007CFF; }
+    .content__btn_next {
+      clip-path: polygon(0 0, 100% 50%, 0 100%); }
+    .content__btn_previous {
+      clip-path: polygon(100% 0, 0 50%, 100% 100%); }
+    .content__btn_inactive {
+      color: rgba(188, 195, 208, 0.5); }
+    .content__btn_clear {
+      height: 32px;
+      width: 30px;
+      position: absolute;
+      bottom: 0;
+      left: 31%;
+      border-radius: 50px 50px 0px 0px;
+      backdrop-filter: blur(25px);
+      background: rgba(0, 0, 0, 0.13); }
+  .content__btn-img {
+    width: 24px;
+    height: 24px; }
+  .content__items-conteiner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 64px 1fr 64px;
+    grid-template-rows: 100%;
+    height: 152px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin-top: 24px;
+    transition: height 1s ease-in-out; }
+    .content__items-conteiner_none {
+      height: 0; }
+  .content__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 128px);
+    align-items: start;
+    margin-top: 12px;
+    list-style: none;
+    overflow: hidden;
+    scroll-snap-type: x mandatory; }
+  .content__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    scroll-snap-align: center; }
+    .content__item:hover {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+  .content__name {
+    font-family: 'MTS Compact';
+    font-size: 12px;
+    color: #626C77;
+    line-height: 16px;
+    text-align: center; }
+  .content__img-cont {
+    width: 64px;
+    height: 88px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative; }
+  .content__img {
+    width: auto;
+    height: 100%; }
+  .content__limitations {
+    font-family: 'MTS Compact';
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    mix-blend-mode: normal;
+    backdrop-filter: blur(6px);
+    border-radius: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+    background: #F95721;
+    left: 2px;
+    top: 2px; }
+    .content__limitations_light {
+      background: #626C77; }
+  .content__type {
+    font-family: 'MTS Compact';
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    mix-blend-mode: normal;
+    backdrop-filter: blur(6px);
+    border-radius: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+    background: #007CFF;
+    left: 2px;
+    top: 20px; }
+    .content__type_svod {
+      background: #03A17B; }

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MTS Compact';
+    src: local('MTS Compact Regular'), local('MTS-Compact-Regular'),
+        url('MTSCompact-Regular.woff2') format('woff2'),
+        url('MTSCompact-Regular.woff') format('woff'),
+        url('MTSCompact-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

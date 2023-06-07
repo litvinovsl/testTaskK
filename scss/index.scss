@@ -1,0 +1,226 @@
+@import url(../font/stylesheet.css);
+@import url(../font/MTSCompact-Regular/style.css);
+
+@mixin dFlex ($fd, $jc) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+}
+
+@mixin btnSlide () {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 24px;
+    width: 24px;
+}
+
+@mixin textOnFilm() {
+    font-family: 'MTS Compact';
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFF;
+    mix-blend-mode: normal;
+    backdrop-filter: blur(6px);
+    border-radius: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.logo {
+    width: 177px;
+    @include dFlex(column, center);
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 77px;
+    margin-top: 145px;
+    gap: 8.5px;
+    position: relative;
+
+    &__text {
+        font-family: 'MTS Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7.28962px;
+        line-height: 22px;
+        letter-spacing: 2.73361px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.47);
+        backdrop-filter: blur(4.93151px);
+        margin: 0;
+    }
+
+    &__symbol {
+        width: 53.64px;
+        height: 45.56px;
+    }
+
+    &__icon {
+        filter: drop-shadow(0px 3.94521px 29.589px rgba(249, 52, 241, 0.33));
+    }
+
+    &__circle {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        background: rgba(249, 52, 241, 0.5);
+        border-radius: 50%;
+        filter: blur(25px);
+        position: absolute;
+        top: -4px;
+        left: 60px;
+    }
+}
+
+.content {
+    max-width: 1280px;
+    width: 100%-14%;
+    position: relative;
+
+    &__header {
+        @include dFlex(row, space-between);
+        border-bottom: 1px solid rgba(188, 195, 208, 0.5);
+    }
+
+    &__recomended-text {
+        color: #626C77;
+        font-family: 'MTS Compact';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    &__btn {
+        margin: 0;
+        border: none;
+        background: none;
+        color: #969FA8;
+
+        &_actions {
+            color: #007CFF;
+        }
+
+        &_next {
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+
+        &_previous {
+            clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        }
+
+        &_inactive {
+            color: rgba(188, 195, 208, 0.5);
+        }
+
+        &_clear {
+            height: 32px;
+            width: 30px;
+            position: absolute;
+            bottom: 0;
+            left: 31%;
+            border-radius: 50px 50px 0px 0px;
+            backdrop-filter: blur(25px);
+            background: rgba(0, 0, 0, 0.13);
+        }
+    }
+
+    &__btn-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__items-conteiner {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 64px 1fr 64px;
+        grid-template-rows: 100%;
+        height: 152px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        margin-top: 24px;
+        transition: height 1s ease-in-out;
+
+        &_none {
+            height: 0;
+        }
+    }
+
+    &__items {
+        width: 100%;
+        display: grid;
+        // grid-gap: 4px;
+        grid-template-columns: repeat(20, 128px);
+        align-items: start;
+        margin-top: 12px;
+        list-style: none;
+        overflow: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+
+    &__item {
+        @include dFlex(column, center);
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin: 0;
+        scroll-snap-align: center;
+
+        &:hover {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    &__name {
+        font-family: 'MTS Compact';
+        font-size: 12px;
+        color: #626C77;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    &__img-cont {
+        width: 64px;
+        height: 88px;
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
+
+    }
+
+    &__img {
+        width: auto;
+        height: 100%;
+    }
+
+    &__limitations {
+        @include textOnFilm();
+        background: #F95721;
+        left: 2px;
+        top: 2px;
+
+        &_light {
+            background: #626C77;
+        }
+    }
+
+    &__type {
+        @include textOnFilm();
+        background: #007CFF;
+        ;
+        left: 2px;
+        top: 20px;
+
+        &_svod {
+            background: #03A17B;
+        }
+    }
+}
